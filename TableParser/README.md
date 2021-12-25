@@ -47,12 +47,13 @@ CUDA_VISIBLE_DEVICES=4,5,6,7 python tools/train_net.py --num-gpus 4 --dist-url '
 **Note**: TableParser M1 (ModernTableParser) and M2 (HistoricalTableParser) can be downloaded from [this Google Drive link,](https://drive.google.com/file/d/1HxILaFrymyjuUtqyqcz3fyS5TrLhf-05/view?usp=sharing) and put under `.TableParser/TableParser/detectron2/tools/docparser_outputs`. 
 
 ### 3.4 Pre-trained model with `ZHYearbook-Excel-WS` 
-Model under `./tableparser/detectron2/tools/docparser_outputs/docparser_tables_4gpu_ws` 
+Model under `./TableParser/detectron2/tools/docparser_outputs/docparser_tables_4gpu_ws` 
+
 ### 3.5 ModernTableParser 
-Model under `./tableparser/detectron2/tools/docparser_outputs/docparser_yearbooks_ws_tables_4gpu_thesis_v1_swisstext_finetune_v2_from_arxivdocs`
+Model under `./TableParser/detectron2/tools/docparser_outputs/docparser_yearbooks_ws_tables_4gpu_thesis_v1_swisstext_finetune_v2_from_arxivdocs`
 
 ### 3.6 HistoricalTableParser 
-Model under `./tableparser/detectron2/tools/docparser_outputs/manual_docparser_Au_tables_4gpu_finetune_v2`
+Model under `./TableParser/detectron2/tools/docparser_outputs/manual_docparser_Au_tables_4gpu_finetune_v2`
 
 ## 4. Google Vision OCR => TableParser
 - Getting OCR bounding boxes, see`./preprocessing/google-vision-bbox.ipynb` 
