@@ -33,16 +33,16 @@ Run `python docparser/utils/create_dataset_groundtruths_exact.py`.
 
 ### 3.2 Finetuning for ModernTableParser 
 ```bash
-CUDA_VISIBLE_DEVICES=4,5,6,7 python tools/train_net.py --num-gpus 4 --dist-url 'tcp://127.0.0.1:5362' --resume --config-file /mnt/ds3lab-scratch/jrausch/git/detectron2/configs/arxivdocs-Detection/docparser_yearbooks_tables_4gpu_thesis_v1_swisstext_finetune.yaml MODEL.WEIGHTS pretrained_models/docparser_tables_4gpu_ws/model_final.pth OUTPUT_DIR tools/docparser_outputs/docparser_yearbooks_ws_tables_4gpu_thesis_v1_swisstext_finetune_v2_from_arxivdocs
+CUDA_VISIBLE_DEVICES=4,5,6,7 python tools/train_net.py --num-gpus 4 --dist-url 'tcp://127.0.0.1:5362' --resume --config-file ./<git-home>/TableParser/detectron2/configs/arxivdocs-Detection/docparser_yearbooks_tables_4gpu_thesis_v1_swisstext_finetune.yaml MODEL.WEIGHTS pretrained_models/docparser_tables_4gpu_ws/model_final.pth OUTPUT_DIR tools/docparser_outputs/docparser_yearbooks_ws_tables_4gpu_thesis_v1_swisstext_finetune_v2_from_arxivdocs
 ```
 
 ### 3.2 Run inference demo on the dataset `ZHYearbook-Excel-Test`
 ```sh
-CUDA_VISIBLE_DEVICES=0 python demo/demo.py --config-file /mnt/ds3lab-scratch/jrausch/git/detectron2/configs/arxivdocs-Detection/docparser_yearbooks_tables_4gpu_thesis_v1_swisstext_finetune.yaml --input /mnt/ds3lab-scratch/jrausch/git/detectron2/demo/yearbooks_swisstext/scan/* --output "demo/yearbooks_swisstext/outputs_automatictrain_yearbooks_ws/" --opts MODEL.WEIGHTS pretrained_models/docparser_yearbooks_ws_tables_4gpu_thesis_v1_swisstext_finetune_v2_from_arxivdocs/model_final.pth
+CUDA_VISIBLE_DEVICES=0 python demo/demo.py --config-file ./<git-home>/TableParser/detectron2/configs/arxivdocs-Detection/docparser_yearbooks_tables_4gpu_thesis_v1_swisstext_finetune.yaml --input ./<input-image-dir>/* --output "demo/yearbooks_swisstext/outputs_automatictrain_yearbooks_ws/" --opts MODEL.WEIGHTS pretrained_models/docparser_yearbooks_ws_tables_4gpu_thesis_v1_swisstext_finetune_v2_from_arxivdocs/model_final.pth
 ```
 ### 3.3 Get evaluation
 ```sh
-CUDA_VISIBLE_DEVICES=4,5,6,7 python tools/train_net.py --num-gpus 4 --dist-url 'tcp://127.0.0.1:5362' --resume --config-file /mnt/ds3lab-scratch/jrausch/git/detectron2/configs/arxivdocs-Detection/docparser_yearbooks_tables_4gpu_thesis_v1_swisstext_finetune_v2.yaml MODEL.WEIGHTS pretrained_models/docparser_tables_4gpu_ws/model_final.pth OUTPUT_DIR tools/docparser_outputs/docparser_yearbooks_ws_tables_4gpu_thesis_v1_swisstext_finetune_v2_from_arxivdocs
+CUDA_VISIBLE_DEVICES=4,5,6,7 python tools/train_net.py --num-gpus 4 --dist-url 'tcp://127.0.0.1:5362' --resume --config-file ./<git-home>/TableParser/detectron2/configs/arxivdocs-Detection/docparser_yearbooks_tables_4gpu_thesis_v1_swisstext_finetune_v2.yaml MODEL.WEIGHTS pretrained_models/docparser_tables_4gpu_ws/model_final.pth OUTPUT_DIR tools/docparser_outputs/docparser_yearbooks_ws_tables_4gpu_thesis_v1_swisstext_finetune_v2_from_arxivdocs
 ```
 
 ### 3.4 Pre-trained model with `ZHYearbook-Excel-WS` 
