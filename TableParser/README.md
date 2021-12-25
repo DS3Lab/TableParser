@@ -44,6 +44,7 @@ CUDA_VISIBLE_DEVICES=0 python demo/demo.py --config-file ./<git-home>/TableParse
 ```sh
 CUDA_VISIBLE_DEVICES=4,5,6,7 python tools/train_net.py --num-gpus 4 --dist-url 'tcp://127.0.0.1:5362' --resume --config-file ./<git-home>/TableParser/detectron2/configs/arxivdocs-Detection/docparser_yearbooks_tables_4gpu_thesis_v1_swisstext_finetune_v2.yaml MODEL.WEIGHTS pretrained_models/docparser_tables_4gpu_ws/model_final.pth OUTPUT_DIR tools/docparser_outputs/docparser_yearbooks_ws_tables_4gpu_thesis_v1_swisstext_finetune_v2_from_arxivdocs
 ```
+**Note**: TableParser M1 (ModernTableParser) and M2 (HistoricalTableParser) can be downloaded from [this Google Drive link,](https://drive.google.com/file/d/1HxILaFrymyjuUtqyqcz3fyS5TrLhf-05/view?usp=sharing) and put under `.TableParser/TableParser/detectron2/tools/docparser_outputs`. 
 
 ### 3.4 Pre-trained model with `ZHYearbook-Excel-WS` 
 Model under `./tableparser/detectron2/tools/docparser_outputs/docparser_tables_4gpu_ws` 
