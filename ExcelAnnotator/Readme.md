@@ -41,9 +41,9 @@ output_directory
 ### **2.1 Clone Repository**
 Download and install a git client and clone this repository:
 ```batch
-git clone git@github.com:DS3Lab/docparser-raoschi.git
+git clone git@github.com:DS3Lab/TableParser.git
 ```
-into `<git-home>` directory. (home directory of docparser-raoschi is denoted as git-home furtheron).
+into `<git-home>` directory. (home directory is denoted as git-home furtheron).
 
 ### **2.2 Excel**
 Download and install Office (We used Microsoft 365 on 3.12.2020).
