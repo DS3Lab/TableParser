@@ -1,0 +1,49 @@
+_BASE_: "../Base-RCNN-FPN.yaml"
+MODEL:
+  #WEIGHTS: "https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x/138205316/model_final_a3ec72.pkl"
+  WEIGHTS: "tools/docparser_outputs/docparser_yearbooks_ws_tables_4gpu_thesis_v1_swisstext/model_0539999.pth"
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 101
+  ANCHOR_GENERATOR:
+    #defaults
+#    SIZES: [[32], [64], [128], [256], [512]]  # One size for each in feature map
+#    ASPECT_RATIOS: [0.5, 1.0, 2.0]]  # Three aspect ratios (same for all in feature maps)
+    ASPECT_RATIOS: [[0.25, 0.5, 1.0, 2.0, 4.0]]  # Three aspect ratios (same for all in feature maps)
+  ROI_HEADS:
+#default
+    BATCH_SIZE_PER_IMAGE: 512 
+    NUM_CLASSES: 6
+SOLVER:
+#  #8gpus
+#  STEPS: (210000, 250000)
+#  MAX_ITER: 270000 #for 8gpus
+#  IMS_PER_BATCH: 16 #for 8 gpus
+#  BASE_LR: 0.01 #for 8 gpus
+#  CHECKPOINT_PERIOD: 10000
+
+  #for 4 gpus
+  STEPS: (22000, 26000)
+  MAX_ITER: 30000 #for 8gpus
+  IMS_PER_BATCH: 8 #for 8 gpus
+  BASE_LR: 0.005 #for 8 gpus
+  CHECKPOINT_PERIOD: 500
+
+DATASETS:
+  TRAIN: ("Au-tables-v2-finetune_ada",)
+  TEST: ("Au-tables-v2-finetune_ada",)
+   
+INPUT:
+  MIN_SIZE_TRAIN: (100, 200, 300, 400, 500, 600, 700, 800, 900)
+  MAX_SIZE_TRAIN: 1500 #typical height of documents around 842, (which would be roughly the maximum for tables)
+  MIN_SIZE_TEST: 500
+  #MAX_SIZE_TEST: 900
+  RANDOM_FLIP: "none"
+#TEST: #NOTE: no test data yet
+#  DETECTIONS_PER_IMAGE: 1000
+#  AUG:
+#    ENABLED: False
+#  #EVAL_PERIOD: 10000 #set equal to checkpoint period
+OUTPUT_DIR: "tools/docparser_outputs/docparser_yearbooks_ws_tables_4gpu_thesis_v1_swisstext_finetune_from_yearbooks"
+
+
