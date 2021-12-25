@@ -15,7 +15,10 @@ into `<git-home>` directory. (home directory is denoted as git-home furtheron).
 
 ### 2. System components of TableParser
 - System overview of the TableParser pipeline 
-
+    <object data="https://github.com/DS3Lab/TableParser/blob/main/figures/TableParser.drawio.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/DS3Lab/TableParser/blob/main/figures/TableParser.drawio.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/DS3Lab/TableParser/blob/main/figures/TableParser.drawio.pdf">Mask-RCNN</a>.</p>
+    </embed>
 
 - Model overview of Mask RCNN in DocParser
 
