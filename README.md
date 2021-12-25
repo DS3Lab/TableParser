@@ -15,18 +15,18 @@ into `<git-home>` directory. (home directory is denoted as git-home furtheron).
 
 ### 2. System components of TableParser
 - System overview of the TableParser pipeline 
-  <img src="https://github.com/DS3Lab/TableParser/blob/main/figures/TableParser.drawio.pdf"
-     alt="TableParser"
-     style="float: left; margin-right: 10px;" />
+
 
 - Model overview of Mask RCNN in DocParser
-  <img src="https://github.com/DS3Lab/TableParser/blob/main/figures/mask-rcnn.drawio.pdf"
-     alt="Mask-RCNN"
-     style="float: left; margin-right: 10px;" />
 
+    <object data="https://github.com/DS3Lab/TableParser/blob/main/figures/mask-rcnn.drawio.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/DS3Lab/TableParser/blob/main/figures/mask-rcnn.drawio.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/DS3Lab/TableParser/blob/main/figures/mask-rcnn.drawio.pdf">Mask-RCNN</a>.</p>
+    </embed>
+</object>
 
 - TableAnnotator: refer to [this repo.](https://anonymous.4open.science/r/doc_annotation-AAAI22-SDU/README.md) 
-  - [Demo]() of annotating a table using TableAnnotator
+  - [Demo](https://github.com/DS3Lab/TableParser/blob/main/demo/2021-06-15%2002-05-58.gif) of annotating a table using TableAnnotator
 - ExcelAnnotator: `./ExcelAnnotator`.
 - TableParser pipelines: `./TableParser`.
 - Data: Download from [this Google Drive link.](https://drive.google.com/file/d/1gaaHMG6f7sIH1DK4Ybg13_lBHNS2wbbn/view?usp=sharing)
