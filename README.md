@@ -29,7 +29,7 @@ into `<git-home>` directory. (home directory is denoted as git-home furtheron).
 </object>
 
 
-- TableAnnotator: refer to [this repo.](https://anonymous.4open.science/r/doc_annotation-AAAI22-SDU/README.md) 
+- TableAnnotator: refer to [this repo.](https://anonymous.4open.science/r/doc_annotation-SDU-AAAI22/README.md) 
   - [Demo](https://github.com/DS3Lab/TableParser/blob/main/demo/2021-06-15%2002-05-58.gif) of annotating a table using TableAnnotator
 - ExcelAnnotator: `./ExcelAnnotator`.
 - TableParser pipelines: `./TableParser`.

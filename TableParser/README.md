@@ -17,7 +17,7 @@ Repo for TableParser based on DocParser
 
 ## 1. Project goal
 To design a TableParser based on the DocParser, which deals with all sorts of tables (scanned, automatically generated) in a robust way. 
-1. We also make the [TableAnnotator GUI](https://anonymous.4open.science/r/doc_annotation-CEC7/README.md) openly accessible where users can visualize their outputs easily, make adjustments, and export in a json/csv file. For the open-source dataset, see [here](https://drive.google.com/file/d/1gaaHMG6f7sIH1DK4Ybg13_lBHNS2wbbn/view?usp=sharing) for download. For our ExcelAnnotator, see [here](https://anonymous.4open.science/r/ExcelAnnotator-D8E5/Readme.md). 
+1. We also make the [TableAnnotator GUI](https://anonymous.4open.science/r/doc_annotation-SDU-AAAI22/README.md) openly accessible where users can visualize their outputs easily, make adjustments, and export in a json/csv file. For the open-source dataset, see [here](https://drive.google.com/file/d/1gaaHMG6f7sIH1DK4Ybg13_lBHNS2wbbn/view?usp=sharing) for download. For our ExcelAnnotator, see [here](https://anonymous.4open.science/r/ExcelAnnotator-D8E5/Readme.md). 
 2. We also provide our pretrained model for new domain adaptation, so that users can fine tune the model with their in-domain tables (under `pretrained_models').
 
 
