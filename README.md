@@ -34,7 +34,7 @@ into `<git-home>` directory. (home directory is denoted as git-home furtheron).
 - ExcelAnnotator: `./ExcelAnnotator`.
 - TableParser pipelines: `./TableParser`.
 - Data: Download from [this Google Drive link.](https://drive.google.com/file/d/1gaaHMG6f7sIH1DK4Ybg13_lBHNS2wbbn/view?usp=sharing)
-- TableParser M1 (ModernTableParser) and M2 (HistoricalTableParser) can be downloaded from [this Google Drive link,](https://drive.google.com/file/d/1HxILaFrymyjuUtqyqcz3fyS5TrLhf-05/view?usp=sharing) and put under `.TableParser/TableParser/detectron2/tools/docparser_outputs`. 
+- TableParser M1 (ModernTableParser) and M2 (HistoricalTableParser) can be downloaded from [this Google Drive link,](https://drive.google.com/file/d/1HxILaFrymyjuUtqyqcz3fyS5TrLhf-05/view?usp=sharing) and put under `./TableParser/TableParser/detectron2/tools/docparser_outputs`. 
 
 ### 3. References
 To cite TableParser, refer to these items:
