@@ -43,16 +43,16 @@ To cite TableParser, refer to these items:
   title={DocParser: Hierarchical Document Structure Parsing from Renderings},
   author={Rausch, Johannes and Martinez, Octavio and Bissig, Fabian and Zhang, Ce and Feuerriegel, Stefan},
   booktitle={35th AAAI Conference on Artificial Intelligence (AAAI-21)(virtual)},
-  howpublished = "\url{https://arxiv.org/abs/1911.01702}",
+  howpublished = {\url{https://arxiv.org/abs/1911.01702}},
   year={2021}
 }
 ```
 ```bibtex
-@article{rao2022tableparser,
+@inproceedings{rao2022tableparser,
   title={TableParser: Automatic Table Parsing with Weak Supervision from Spreadsheets},
   author={Rao, Susie Xi and Rausch, Johannes and Egger, Peter and Zhang, Ce},
-  booktitle={Scientific Document Understanding Workshop (\tt SDU{@}AAAI-22)(virtual)},
-  howpublished = "\url{https://arxiv.org/abs/2201.01654}",
+  booktitle={Scientific Document Understanding Workshop (SDU{@}AAAI-22)(virtual)},
+  howpublished = {\url{https://arxiv.org/abs/2201.01654}},
   year={2022}
 }
 ```
